@@ -49,6 +49,11 @@ This plot shows that when ARM increases so does SIMS. There is an upward traject
 
 ### Numerical results
 
+```{r}
+cor(SIMS~ARM,data=data)
+```
+
+There is a positive correlation between SIMS and ARM. This is shown by the positive number given by the numerical results.
 
 ### Inferential  (Build model.1)
 
