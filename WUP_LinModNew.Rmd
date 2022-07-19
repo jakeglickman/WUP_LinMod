@@ -78,12 +78,19 @@ basicNN + geom_point() + geom_lm()
 ```
 
 
-
-
 ## Model 2 SIM~GRIP
+
+```{r}
+basicNN <- ggplot(data,aes(y=SIMS,x=GRIP))
+```
 
 ### Now add in scatterplot
 
+```{r}
+basicNN + geom_point()
+```
+
+This scatterplot shows a positive correlation between SIMS and GRIP.
 
 ### Numerical results 
 
