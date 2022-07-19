@@ -57,7 +57,20 @@ There is a positive correlation between SIMS and ARM. This is shown by the posit
 
 ### Inferential  (Build model.1)
 
+```{r}
+model.1 <- lm(SIMS~ARM,data=data)
+summary.lm(model.1)
+```
+
+The inferential results gave a standard deviation of 1.226, with the adjusted R-squared at 0.467. 
+
 #### Predict at target point
+
+```{r}
+tgp=data.frame(ARM=88, GRIP=94)
+predict.lm(model.1, tgp, interval = "prediction")
+```
+
 
 
 #### scatterplot with model fit
