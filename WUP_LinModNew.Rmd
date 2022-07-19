@@ -112,6 +112,11 @@ The inferential results gave a standard deviation of 1.295 and an adjusted R-squ
 
 #### predict model.2 at target point
 
+```{r}
+tgp=data.frame(ARM=88, GRIP=94)
+predict.lm(model.2, tgp, interval = "prediction")
+```
+
 #### now add the model fit to our plot for model.2
   
 
