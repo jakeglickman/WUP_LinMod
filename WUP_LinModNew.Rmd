@@ -33,7 +33,19 @@ data <- read.csv(file="https://onlinestatbook.com/case_studies_rvls/physical_str
 
 ## Model 1 SIM~ARMS
 
+```{r}
+basicNN <- ggplot(data,aes(y=SIMS,x=ARM))
+```
+
+
+
 ### scatterplot
+
+```{r}
+basicNN + geom_point()
+```
+
+This plot shows that when ARM increases so does SIMS. There is an upward trajectory of the plots.
 
 ### Numerical results
 
