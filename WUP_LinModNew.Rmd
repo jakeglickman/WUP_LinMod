@@ -81,13 +81,13 @@ basicNN + geom_point() + geom_lm()
 ## Model 2 SIM~GRIP
 
 ```{r}
-basicNN <- ggplot(data,aes(y=SIMS,x=GRIP))
+basicNN_GRIP <- ggplot(data,aes(y=SIMS,x=GRIP))
 ```
 
 ### Now add in scatterplot
 
 ```{r}
-basicNN + geom_point()
+basicNN_GRIP + geom_point()
 ```
 
 This scatterplot shows a positive correlation between SIMS and GRIP.
@@ -101,7 +101,14 @@ cor(SIMS~GRIP,data=data)
 This tells us there is a positive correlation between SIMS and GRIP. However, the correlation between SIMS and ARM is a higher number so therefore they are more closely correlated than SIMS and GRIP.
 
 ### Inferential  (Build model.2)
-  
+
+```{r}
+model.2 <- lm(SIMS~GRIP,data=data)
+summary.lm(model.2)
+```
+
+The inferential results gave a standard deviation of 1.295 and an adjusted R-squared of 0.4053. This gave a higher standard deviation than SIMS and ARM, and a lower adjusted R-squared.  
+
 
 #### predict model.2 at target point
 
