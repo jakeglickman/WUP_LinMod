@@ -94,6 +94,11 @@ This scatterplot shows a positive correlation between SIMS and GRIP.
 
 ### Numerical results 
 
+```{r}
+cor(SIMS~GRIP,data=data)
+```
+
+This tells us there is a positive correlation between SIMS and GRIP. However, the correlation between SIMS and ARM is a higher number so therefore they are more closely correlated than SIMS and GRIP.
 
 ### Inferential  (Build model.2)
   
