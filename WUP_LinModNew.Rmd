@@ -71,10 +71,14 @@ tgp=data.frame(ARM=88, GRIP=94)
 predict.lm(model.1, tgp, interval = "prediction")
 ```
 
-
-
 #### scatterplot with model fit
   
+```{r}
+basicNN + geom_point() + geom_lm()
+```
+
+
+
 
 ## Model 2 SIM~GRIP
 
