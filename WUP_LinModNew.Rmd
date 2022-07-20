@@ -165,5 +165,7 @@ The anova test tells us that using both ARM and GRIP is a better model than just
 anova(model.2,model.3)
 ```
 
+The ARM + GRIP model is significantly better than just the GRIP model. The p-value is very low, signifying a low chance of getting the results seen above if there was no difference in models. The GRIP model is the worst of the three and the ARM + GRIP model is the best.
+
 ## Informally compare Model.1 with model.2
 
