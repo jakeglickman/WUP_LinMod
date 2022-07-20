@@ -153,11 +153,17 @@ This prediction shows that is the ARM + GRIP plane the lower amount is about -2.
 
 ### Model.1 vs Model.3
 
+```{r}
+anova(model.1,model.3)
+```
 
+The anova test tells us that using both ARM and GRIP is a better model than just using GRIP. This is shown by the low p-value telling us that there was a small chance of getting these results if there was no difference between the models.
 
 ### Model.2 vs Model.3
 
-
+```{r}
+anova(model.2,model.3)
+```
 
 ## Informally compare Model.1 with model.2
 
