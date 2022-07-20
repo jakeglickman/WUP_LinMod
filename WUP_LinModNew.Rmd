@@ -126,7 +126,11 @@ basicNN_GRIP + geom_point() + geom_lm()
 
 ### Numerical results (cor)
 
-`
+```{r}
+cor(SIMS~ARM+GRIP,data=data)
+```
+
+The correlation when using ARM and GRIP is higher than just using ARM or just using GRIP.
   
 ### Inferential  (Build 2-dimentional model.3)
 
