@@ -169,3 +169,8 @@ The ARM + GRIP model is significantly better than just the GRIP model. The p-val
 
 ## Informally compare Model.1 with model.2
 
+```{r}
+anova(model.1,model.2)
+```
+
+The difference between the ARM model and the GRIP model is -25.189. This means that the ARM model is better because the RSS is smaller than that of the GRIP model. There is no p-value given because neither model has the other nested in it.
